@@ -19,7 +19,7 @@ while 1:
     choice= questionary.select('FILE ORGANIZER: ', choices=selection_list).ask()
 
     if choice == 'EXIT':
-        x= input("Do you really want to exit?[Y/N]").upper()
+        x= input("Do you really want to exit?[Y/N]").upper().strip()
         if x == 'Y':
             print('EXITING             ', end= '')
             animations.usethisforspinningcursor(24)

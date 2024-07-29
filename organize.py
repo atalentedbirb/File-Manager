@@ -11,7 +11,7 @@ import threading
 def allofcodehere(filepath):
     boo= True
     def loadingbecausethreadingdidntworkasintended():
-        print('LOADING                         /', end= '')
+        print('WORKING ON IT                         /', end= '')
         while boo:
             if not boo:
                 break
@@ -37,12 +37,14 @@ def allofcodehere(filepath):
                     print('Going back to menu')
                     break
                 
+                print('Working on: ', os.getcwd())
+                
                 boo= True #starting the animation simultaneously
                 loadingobject= threading.Thread(target=loadingbecausethreadingdidntworkasintended)
                 loadingobject.start()
                 
                 os.chdir(filepath) #changes to this filepath
-                print('Working on: ', os.getcwd())
+                print('')
                 if not os.path.exists('Pictures'):
                     os.mkdir('Pictures')
                 if not os.path.exists('Music'): 
@@ -65,16 +67,14 @@ def allofcodehere(filepath):
                     elif item.endswith('.txt'):
                         shutil.move(os.path.join(filepath, item), os.path.join('Text File', item))
                     
-                print('\nFinished.')
+                print('Finished.', end= '\n')
                 
                 boo= False
+                loadingobject.join()
+                print('\n')
                 break
     except IOError:
         print('Path could not be deciphered, try again.')
     except ValueError:
         print('It should be a string, try again.')
-    
-    time.sleep(1)
-    boo= False
-    loadingobject.join()
-    print('\n')
+        

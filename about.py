@@ -19,7 +19,7 @@ def main():
 
     
 
-    print(center_text('FILE MANAGER v1.0.0'))
+    print(center_text('FILE MANAGER v1.0.1'))
     print('\n')
     timestamp= str(datetime.now())
     print(center_text('Current Timestamp: '+ timestamp))
@@ -41,5 +41,3 @@ def main():
     print('\n')
     print(center_text('Socials: Check my github profile @atalentedbirb'))
     print(center_text('Made in Atlanta, GA. Made by atalentedbirb. License: MIT License'))
-
-main()
