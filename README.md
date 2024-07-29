@@ -15,8 +15,36 @@ A python based file manager. It will clean up your directory and organize files 
 
 ## How to use?
 
-**Still working on it **
+### Using windows CLI 
+
+>**Required Packages:**
+>This program uses custom packages so make sure to install them before running the program. 
+>Some packages are `shutil`, `colorama`, `pyuac` and `questionary`.
+
+### Step 1: Clone the git repo
+
+Clone this repo by using this command: 
+
+```
+git clone https://github.com/atalentedbirb/File-Manager.git
+```
+
+### Step 2: Run the `main` file
+
+Locate the `main` file. Then run this command in the directory of the main file.
+
+```
+python .\main.py
+```
 
 ----
 
-## 
+## Important info
+
+>**Special Access Required:**
+>This program runs the `os` module and hence for running it, you may or may not need admin privileges. Please do not run in the windows root folder, you will be held liable for your loss.
+
+----
+
+## Credits:
+Me and myself.
