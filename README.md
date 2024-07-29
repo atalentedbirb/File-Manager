@@ -11,8 +11,6 @@ A python based file manager. It will clean up your directory and organize files 
 ![image](https://github.com/user-attachments/assets/9addf92d-61ba-44f4-8314-223d421d2a79)
 
 
-----
-
 ## How to use?
 
 ### Using windows CLI 
@@ -37,7 +35,6 @@ Locate the `main` file. Then run this command in the directory of the main file.
 python .\main.py
 ```
 
-----
 
 ## Important info
 
