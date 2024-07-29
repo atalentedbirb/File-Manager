@@ -28,7 +28,7 @@ def allofcodehere(filepath):
             if not os.path.exists(filepath):
                 print('Path does not exist, try again')
                 print('Press any key to go back to menu')
-                key= getch.getch()
+                key= getch.getch() ##it is used for capturing any key on keyboard
                 if key:
                     break
             else:
