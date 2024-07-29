@@ -19,7 +19,7 @@ def main():
 
     
 
-    print(center_text('FILE MANAGER'))
+    print(center_text('FILE MANAGER v1.0.0'))
     print('\n')
     timestamp= str(datetime.now())
     print(center_text('Current Timestamp: '+ timestamp))
