@@ -17,7 +17,7 @@ A python based file manager. It will clean up your directory and organize files 
 
 >**Required Packages:**
 >This program uses custom packages so make sure to install them before running the program. 
->Some packages are `shutil`, `colorama`, `pyuac` and `questionary`.
+>Some packages are `shutil`, `colorama`, `pyuac`, `getch` and `questionary`.
 
 ### Step 1: Clone the git repo
 
